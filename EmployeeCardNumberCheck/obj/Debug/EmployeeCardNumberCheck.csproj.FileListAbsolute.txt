@@ -1,0 +1,11 @@
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\EmployeeCardNumberCheck.exe.config
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\EmployeeCardNumberCheck.exe
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\EmployeeCardNumberCheck.pdb
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\obj\Debug\EmployeeCardNumberCheck.csproj.AssemblyReference.cache
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\obj\Debug\EmployeeCardNumberCheck.csproj.CoreCompileInputs.cache
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\obj\Debug\EmployeeCardNumberCheck.exe
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\obj\Debug\EmployeeCardNumberCheck.pdb
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\NLog.config
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\NLog.dll
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\NLog.xml
+D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\obj\Debug\EmployeeCardNumberCheck.csproj.CopyComplete

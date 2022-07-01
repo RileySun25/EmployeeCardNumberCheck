@@ -1,0 +1,184 @@
+[2022-06-30 10:48:55.0857]--ERROR--[1]--[ CReadCSVSystem.IO.IOException: 由於另一個處理序正在使用檔案 'D:\TestData\員工.csv'，所以無法存取該檔案。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path)
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 66] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:90) - 
+[2022-06-30 10:49:05.8952]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份202206301006.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 48] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:58) - 
+[2022-06-30 10:51:18.4424]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份202206301006.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 49] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:59) - 
+[2022-06-30 12:10:32.1410]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份20220630120632.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 53] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:63) - 
+[2022-06-30 12:17:44.4710]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份20220630120644.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 53] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:63) - 
+[2022-06-30 12:26:45.7943]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份20220630120645.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 53] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:63) - 
+[2022-06-30 12:28:26.3077]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份20220630120626.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 53] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:63) - 
+[2022-06-30 14:04:46.4104]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份20220630020646.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 53] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:63) - 
+[2022-06-30 14:04:46.4504]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 106] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:114) - 
+[2022-06-30 14:05:17.3669]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 106] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:114) - 
+[2022-06-30 14:08:41.2346]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份20220630020641.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 53] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:63) - 
+[2022-06-30 14:09:03.5500]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份20220630020603.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 53] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:63) - 
+[2022-06-30 15:56:14.4286]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630030614.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 47] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:57) - 
+[2022-06-30 15:56:32.0993]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630030632.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 47] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:57) - 
+[2022-06-30 16:02:59.2929]--ERROR--[1]--[ DistintOrNoSystem.ArgumentNullException: 值不能為 null。
+參數名稱: collection
+   於 System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 139] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-06-30 17:09:38.9630]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630050638.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 54] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:64) - 
+[2022-06-30 17:37:07.6226]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 80] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 17:37:07.6876]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 130] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:141) - 
+[2022-06-30 17:37:24.5743]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 80] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 17:37:24.6109]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 130] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:141) - 
+[2022-06-30 17:42:09.0738]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630050609.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 55] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:65) - 
+[2022-06-30 17:44:19.4727]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 80] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 17:44:19.5107]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 136] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:145) - 
+[2022-06-30 17:45:07.7355]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630050607.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 55] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:65) - 
+[2022-06-30 17:45:07.7705]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 80] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 17:45:07.7705]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 136] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:145) - 
+[2022-06-30 17:45:24.2862]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630050624.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 55] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:65) - 
+[2022-06-30 17:48:25.5915]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 80] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 17:48:25.6295]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 136] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:145) - 
+[2022-06-30 17:48:40.2549]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630050640.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 55] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:65) - 
+[2022-06-30 17:50:42.8730]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630050642.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 55] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:65) - 
+[2022-06-30 17:52:23.8597]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630050623.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 55] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:65) - 
+[2022-06-30 17:52:23.8967]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 81] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 17:56:51.3587]--ERROR--[1]--[ CReadCSVSystem.IO.IOException: 由於另一個處理序正在使用檔案 'D:\TestData\員工.csv'，所以無法存取該檔案。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path)
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 73] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 17:56:51.3967]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 127] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:144) - 
+[2022-06-30 17:57:29.3620]--ERROR--[1]--[ CReadCSVSystem.IO.IOException: 由於另一個處理序正在使用檔案 'D:\TestData\員工.csv'，所以無法存取該檔案。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path)
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 73] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 17:57:29.4000]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 127] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:144) - 
+[2022-06-30 18:03:38.3135]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220630060638.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 55] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:65) - 
+[2022-06-30 18:03:38.3475]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 80] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-06-30 18:03:38.3475]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 135] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:144) - 

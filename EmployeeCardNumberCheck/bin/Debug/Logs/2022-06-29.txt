@@ -1,0 +1,119 @@
+[2022-06-29 16:40:12.4042]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.FileNotFoundException: 找不到檔案 '''員工.csv'。
+檔案名稱: '''員工.csv'
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 28] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:32) - 
+[2022-06-29 16:41:00.8054]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   於 System.IO.Directory.GetFiles(String path, String searchPattern)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 27] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:32) - 
+[2022-06-29 16:41:16.8476]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   於 System.IO.Directory.GetFiles(String path, String searchPattern)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 27] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:32) - 
+[2022-06-29 16:41:53.2875]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   於 System.IO.Directory.GetFiles(String path, String searchPattern)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 27] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:32) - 
+[2022-06-29 16:42:06.4710]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.FileNotFoundException: 找不到檔案 '員工.csv'。
+檔案名稱: '員工.csv'
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 28] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:32) - 
+[2022-06-29 16:54:06.4730]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工CopyTest' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 32] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:37) - 
+[2022-06-29 16:56:06.5739]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工CopyTest' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 32] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:37) - 
+[2022-06-29 17:03:16.2465]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:44) - 
+[2022-06-29 17:04:43.8392]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:44) - 
+[2022-06-29 17:05:20.6040]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:44) - 
+[2022-06-29 17:06:45.6975]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:44) - 
+[2022-06-29 17:07:34.3863]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 39] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:45) - 
+[2022-06-29 17:08:45.8329]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 36] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:45) - 
+[2022-06-29 17:15:43.4245]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:47) - 
+[2022-06-29 17:18:15.0143]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.DirectoryNotFoundException: 找不到路徑 'D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\''TestData''' 的一部分。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   於 System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   於 System.IO.Directory.GetFiles(String path, String searchPattern)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 32] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:47) - 
+[2022-06-29 17:19:47.8293]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:47) - 
+[2022-06-29 17:20:32.5474]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:47) - 
+[2022-06-29 17:20:55.0781]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:47) - 
+[2022-06-29 17:21:30.3168]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.NotSupportedException: 不支援指定的路徑格式。
+   於 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   於 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 38] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:47) - 
+[2022-06-29 17:49:23.9250]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份202206290506.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 40] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:50) - 
+[2022-06-29 17:50:50.8056]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\CopyTest\員工備份202206290506.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 40] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:50) - 

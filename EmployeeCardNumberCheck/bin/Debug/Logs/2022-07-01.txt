@@ -1,0 +1,307 @@
+[2022-07-01 09:42:36.5313]--ERROR--[1]--[ CReadCSVSystem.IO.FileNotFoundException: 找不到檔案 'D:\TestData\員工.csv'。
+檔案名稱: 'D:\TestData\員工.csv'
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path)
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 73] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:93) - 
+[2022-07-01 10:53:05.6961]--ERROR--[1]--[ DistintOrNoSystem.Net.Mail.SmtpException: SMTP 伺服器需要安全連接，或用戶端未經驗證。 伺服器回應為: 5.7.0 Authentication Required. Learn more at
+   於 System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   於 System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   於 System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   於 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   於 EmployeeCardNumberCheck.Program.SendAutomatedEmail(String ReceiveMail, String DinstinctCardNum) 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 175
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 119] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:131) - 
+[2022-07-01 10:57:50.9760]--ERROR--[1]--[ DistintOrNoSystem.Net.Mail.SmtpException: SMTP 伺服器需要安全連接，或用戶端未經驗證。 伺服器回應為: 5.7.0 Authentication Required. Learn more at
+   於 System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   於 System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   於 System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   於 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   於 EmployeeCardNumberCheck.Program.SendAutomatedEmail(String ReceiveMail, String DinstinctCardNum) 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 175
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 119] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:131) - 
+[2022-07-01 10:59:06.1937]--ERROR--[1]--[ DistintOrNoSystem.Net.Mail.SmtpException: SMTP 伺服器需要安全連接，或用戶端未經驗證。 伺服器回應為: 5.7.0 Must issue a STARTTLS command first. l23-20020a17090aec1700b001ecb29fb5f1sm5326061pjy.0 - gsmtp
+   於 System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   於 System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   於 System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   於 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   於 EmployeeCardNumberCheck.Program.SendAutomatedEmail(String ReceiveMail, String DinstinctCardNum) 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 174
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 119] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:131) - 
+[2022-07-01 11:02:21.7660]--ERROR--[1]--[ DistintOrNoSystem.InvalidOperationException: 未指定 SMTP 主機。
+   於 System.Net.Mail.SmtpClient.CheckHostAndPort()
+   於 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   於 EmployeeCardNumberCheck.Program.SendAutomatedEmail(String ReceiveMail, String DinstinctCardNum) 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 176
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 119] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:131) - 
+[2022-07-01 11:04:53.4031]--ERROR--[1]--[ DistintOrNoSystem.InvalidOperationException: 未指定 SMTP 主機。
+   於 System.Net.Mail.SmtpClient.CheckHostAndPort()
+   於 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   於 EmployeeCardNumberCheck.Program.SendAutomatedEmail(String ReceiveMail, String DinstinctCardNum) 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 176
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 119] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:131) - 
+[2022-07-01 11:10:22.5722]--ERROR--[1]--[ DistintOrNoSystem.InvalidOperationException: 未指定 SMTP 主機。
+   於 System.Net.Mail.SmtpClient.CheckHostAndPort()
+   於 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   於 EmployeeCardNumberCheck.Program.SendAutomatedEmail(String ReceiveMail, String DinstinctCardNum) 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 176
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 119] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:131) - 
+[2022-07-01 11:11:10.3557]--ERROR--[1]--[ DistintOrNoSystem.Net.Mail.SmtpException: SMTP 伺服器需要安全連接，或用戶端未經驗證。 伺服器回應為: 5.7.0 Authentication Required. Learn more at
+   於 System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   於 System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   於 System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   於 System.Net.Mail.SmtpClient.Send(MailMessage message)
+   於 EmployeeCardNumberCheck.Program.SendAutomatedEmail(String ReceiveMail, String DinstinctCardNum) 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 175
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 119] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:131) - 
+[2022-07-01 11:23:49.5976]--INFO--[1]--[有重複卡號27905482已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:121) - 
+[2022-07-01 11:23:52.5959]--INFO--[1]--[有重複卡號27905482已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:121) - 
+[2022-07-01 11:23:55.5186]--INFO--[1]--[有重複卡號98765432已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:121) - 
+[2022-07-01 11:23:58.5606]--INFO--[1]--[有重複卡號98765432已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:121) - 
+[2022-07-01 11:31:00.2790]--INFO--[1]--[有重複卡號27905482已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:121) - 
+[2022-07-01 11:31:04.0519]--INFO--[1]--[有重複卡號27905482已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:121) - 
+[2022-07-01 11:31:07.2187]--INFO--[1]--[有重複卡號98765432已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:121) - 
+[2022-07-01 11:31:10.2933]--INFO--[1]--[有重複卡號98765432已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:121) - 
+[2022-07-01 12:26:39.8403]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701120739.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 64] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:74) - 
+[2022-07-01 12:27:00.2458]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701120700.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 64] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:74) - 
+[2022-07-01 12:31:56.8805]--ERROR--[1]--[ CReadCSVSystem.IO.FileNotFoundException: 找不到檔案 'D:\TestData\員工.csv'。
+檔案名稱: 'D:\TestData\員工.csv'
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path)
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 82] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:103) - 
+[2022-07-01 12:32:26.0829]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701120726.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 64] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:74) - 
+[2022-07-01 14:24:07.0518]--ERROR--[1]--[ CReadCSVSystem.IO.IOException: 由於另一個處理序正在使用檔案 'D:\TestData\員工.csv'，所以無法存取該檔案。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path)
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 84] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:105) - 
+[2022-07-01 14:24:07.0968]--INFO--[1]--[SaveNewCSV()System.IO.IOException: 由於另一個處理序正在使用檔案 'D:\TestData\員工.csv'，所以無法存取該檔案。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   於 System.IO.FileStream..ctor(String path, FileMode mode)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 150] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:165) - 
+[2022-07-01 14:24:14.1923]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701020714.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 66] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:76) - 
+[2022-07-01 14:24:14.2283]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 91] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:105) - 
+[2022-07-01 14:24:14.2283]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 154] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:165) - 
+[2022-07-01 14:24:46.2098]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 91] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:105) - 
+[2022-07-01 14:24:46.2488]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 154] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:165) - 
+[2022-07-01 14:25:19.0795]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 91] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:105) - 
+[2022-07-01 14:25:19.1195]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 154] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:165) - 
+[2022-07-01 14:31:57.9313]--ERROR--[1]--[ CReadCSVSystem.IO.IOException: 由於另一個處理序正在使用檔案 'D:\TestData\員工.csv'，所以無法存取該檔案。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   於 System.IO.StreamReader..ctor(String path)
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 84] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:105) - 
+[2022-07-01 14:31:57.9693]--INFO--[1]--[SaveNewCSV()System.IO.IOException: 由於另一個處理序正在使用檔案 'D:\TestData\員工.csv'，所以無法存取該檔案。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   於 System.IO.FileStream..ctor(String path, FileMode mode)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 150] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:165) - 
+[2022-07-01 14:32:18.4981]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701020718.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 66] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:76) - 
+[2022-07-01 14:32:18.5340]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 91] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:105) - 
+[2022-07-01 14:32:18.5340]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 154] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:165) - 
+[2022-07-01 14:46:36.4693]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701020736.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 66] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:76) - 
+[2022-07-01 15:08:16.1836]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 93] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:107) - 
+[2022-07-01 15:08:16.2296]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 157] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:168) - 
+[2022-07-01 15:08:25.8335]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701030725.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 68] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:78) - 
+[2022-07-01 15:08:25.8685]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 93] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:107) - 
+[2022-07-01 15:08:25.8775]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 157] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:168) - 
+[2022-07-01 15:09:34.0195]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 93] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:107) - 
+[2022-07-01 15:09:34.0605]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 157] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:168) - 
+[2022-07-01 15:15:46.0620]--INFO--[1]--[有重複卡號27898890已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 15:18:26.6013]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701030726.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 68] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:78) - 
+[2022-07-01 15:18:26.6423]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 93] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:107) - 
+[2022-07-01 15:18:26.6523]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 160] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:171) - 
+[2022-07-01 15:18:47.2181]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 93] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:107) - 
+[2022-07-01 15:18:47.2571]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 160] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:171) - 
+[2022-07-01 15:20:34.0642]--ERROR--[1]--[ CReadCSVSystem.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 EmployeeCardNumberCheck.Program.ReadCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 93] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:107) - 
+[2022-07-01 15:20:34.1082]--INFO--[1]--[SaveNewCSV()System.ArgumentOutOfRangeException: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: index
+   於 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   於 System.Collections.Generic.List`1.get_Item(Int32 index)
+   於 EmployeeCardNumberCheck.Program.SaveNewCSV() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 160] -- EmployeeCardNumberCheck.Program.SaveNewCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:171) - 
+[2022-07-01 15:22:16.5851]--INFO--[1]--[有重複卡號98765432已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 15:24:40.7618]--INFO--[1]--[有重複卡號98765432已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 15:26:30.0263]--INFO--[1]--[有重複卡號12121211已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 15:31:18.3255]--INFO--[1]--[有重複卡號98765443已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:140) - 
+[2022-07-01 15:34:14.3056]--ERROR--[1]--[ CopyFileSaveToFile ErrorSystem.IO.IOException: 檔案 'D:\TestData\CopyTest\員工備份20220701030714.csv' 已經存在。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName)
+   於 EmployeeCardNumberCheck.Program.CopyFileSaveToFile() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 68] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:78) - 
+[2022-07-01 15:34:14.3466]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: 索引和計數必須參考字串中的位置。
+參數名稱: count
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 136] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-07-01 15:36:52.5594]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 136] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-07-01 15:37:26.1647]--INFO--[1]--[有重複卡號98765442已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:141) - 
+[2022-07-01 15:38:36.1447]--INFO--[1]--[有重複卡號98765443已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:141) - 
+[2022-07-01 15:42:12.6645]--INFO--[1]--[有重複卡號98765435，員工工號為21000227、21000228。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:140) - 
+[2022-07-01 15:42:15.6008]--INFO--[1]--[有重複卡號98765443，員工工號為21000227、21000228、21000235、21000236、21000237。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:140) - 
+[2022-07-01 15:47:39.9507]--ERROR--[1]--[ DistintOrNoSystem.IO.FileNotFoundException: 找不到檔案 'D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\LOGO.jpg'。
+檔案名稱: 'D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\bin\Debug\LOGO.jpg'
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   於 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   於 System.Net.Mail.AttachmentBase.SetContentFromFile(String fileName, String mediaType)
+   於 System.Net.Mail.AttachmentBase..ctor(String fileName)
+   於 System.Net.Mail.Attachment..ctor(String fileName)
+   於 EmployeeCardNumberCheck.Program.SendAutomatedEmail(String ReceiveMail, String DistinctCardNumber, String EmpNo) 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 184
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 138] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:146) - 
+[2022-07-01 15:49:10.5425]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 136] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:146) - 
+[2022-07-01 15:49:10.5835]--INFO--[1]--[202207011549排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 15:50:38.8350]--INFO--[1]--[有重複卡號98765438，員工工號為21000227、21000228、21000230。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:140) - 
+[2022-07-01 15:50:42.1823]--INFO--[1]--[有重複卡號98765443，員工工號為21000227、21000228、21000230、21000235、21000236、21000237。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:140) - 
+[2022-07-01 15:50:42.1943]--INFO--[1]--[202207011550排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:02:30.0678]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 137] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-07-01 16:02:30.1098]--INFO--[1]--[202207011602排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:03:06.5389]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 137] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-07-01 16:03:06.5779]--INFO--[1]--[202207011603排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:04:34.9698]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 137] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-07-01 16:04:35.0088]--INFO--[1]--[202207011604排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:05:01.2588]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 137] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-07-01 16:05:01.2948]--INFO--[1]--[202207011605排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:05:35.6082]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 137] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-07-01 16:05:35.6421]--INFO--[1]--[202207011605排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:06:24.2642]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 137] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:147) - 
+[2022-07-01 16:06:24.3022]--INFO--[1]--[202207011606排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:09:51.9209]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 136] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:146) - 
+[2022-07-01 16:09:51.9609]--INFO--[1]--[202207011609排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:12:06.3982]--INFO--[1]--[有重複卡號98765434，員工工號為21000226、21000227、21000228、21000229、21000230、21000231。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 16:12:10.1585]--INFO--[1]--[有重複卡號98765441，員工工號為21000226、21000227、21000228、21000229、21000230、21000231、21000233、21000235、21000236、21000237。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 16:12:10.1704]--INFO--[1]--[202207011612排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:14:08.7738]--INFO--[1]--[有重複卡號98765442，員工工號為21000234、21000235、21000236、21000237。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 16:14:08.8119]--INFO--[1]--[202207011614排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:14:56.5221]--INFO--[1]--[有重複卡號98765438，員工工號為21000229、21000230。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 16:15:00.4577]--INFO--[1]--[有重複卡號98765441，員工工號為21000233、21000234、21000235。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:139) - 
+[2022-07-01 16:15:00.4697]--INFO--[1]--[202207011614排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:54) - 
+[2022-07-01 16:47:58.5567]--INFO--[1]--[20220701164758員工.CSVCopy Success。] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:68) - 
+[2022-07-01 16:47:58.6007]--INFO--[1]--[20220701164758部門.CSVCopy Success。] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:73) - 
+[2022-07-01 16:47:58.6007]--INFO--[1]--[ReadCSV Success!] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:102) - 
+[2022-07-01 16:47:58.6007]--INFO--[1]--[20220701164758卡號:1次] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:118) - 
+[2022-07-01 16:47:58.6007]--INFO--[1]--[2022070116475827905482:1次] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:118) - 
+[2022-07-01 16:47:58.6007]--INFO--[1]--[2022070116475827898890:2次] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:118) - 
+[2022-07-01 16:48:02.0845]--INFO--[1]--[有重複卡號27898890，員工工號為B1000815、B1000816。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:146) - 
+[2022-07-01 16:48:02.0845]--INFO--[1]--[2022070116475898765432:2次] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:118) - 
+[2022-07-01 16:48:05.2464]--INFO--[1]--[有重複卡號98765432，員工工號為21000224、21000223。已寄發信件] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:146) - 
+[2022-07-01 16:48:05.2464]--INFO--[1]--[202207011647排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:53) - 
+[2022-07-01 16:48:13.9153]--INFO--[1]--[20220701164813員工.CSVCopy Success。] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:68) - 
+[2022-07-01 16:48:13.9493]--INFO--[1]--[20220701164813部門.CSVCopy Success。] -- EmployeeCardNumberCheck.Program.CopyFileSaveToFile(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:73) - 
+[2022-07-01 16:48:13.9493]--INFO--[1]--[ReadCSV Success!] -- EmployeeCardNumberCheck.Program.ReadCSV(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:102) - 
+[2022-07-01 16:48:13.9493]--INFO--[1]--[20220701164813卡號:1次] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:118) - 
+[2022-07-01 16:48:13.9553]--INFO--[1]--[2022070116481327905482:1次] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:118) - 
+[2022-07-01 16:48:13.9553]--INFO--[1]--[20220701164813NULL:4次] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:118) - 
+[2022-07-01 16:48:13.9763]--ERROR--[1]--[ DistintOrNoSystem.ArgumentOutOfRangeException: StartIndex 不可以小於零。
+參數名稱: startIndex
+   於 System.String.Remove(Int32 startIndex, Int32 count)
+   於 EmployeeCardNumberCheck.Program.DistintOrNot() 於 D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs: 行 136] -- EmployeeCardNumberCheck.Program.DistintOrNot(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:153) - 
+[2022-07-01 16:48:13.9763]--INFO--[1]--[202207011648排程執行完畢。] -- EmployeeCardNumberCheck.Program.Main(D:\Riley程式\EmployeeCardNumberCheck\EmployeeCardNumberCheck\EmployeeCardNumberCheck\Program.cs:53) - 
