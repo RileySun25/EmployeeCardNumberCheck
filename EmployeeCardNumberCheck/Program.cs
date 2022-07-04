@@ -39,19 +39,27 @@ namespace EmployeeCardNumberCheck
         static List<string> Area = new List<string>();
         static List<string> Title = new List<string>();
         static List<string> caterogy = new List<string>();
+        static List<string> Banbie = new List<string>();
         static List<string> DistinctCardNum = new List<string>();
         static List<string> DistinctEmpNo = new List<string>();
 
 
         static void Main(string[] args)
         {
-            EmpNO.Clear();Name.Clear();FireDate.Clear();CardNum.Clear();Dep.Clear();Title.Clear();Area.Clear();caterogy.Clear();
-            CopyFileSaveToFile();
-            ReadCSV();
-            DistintOrNot();
-            SaveNewCSV();
-            _logger.Info(dateTime.ToString("yyyyMMddHHmm")+"排程執行完畢。");
-            Console.Read();
+            try
+            {
+                EmpNO.Clear(); Name.Clear(); FireDate.Clear(); CardNum.Clear(); Dep.Clear(); Title.Clear(); Area.Clear(); caterogy.Clear();Banbie.Clear();
+                CopyFileSaveToFile();
+                ReadCSV();
+                DistintOrNot();
+                SaveNewCSV();
+                _logger.Info("排程執行完畢。");
+                //Console.Read();
+            }
+            catch (Exception ex) 
+            {
+                _logger.Error("Main"+ex);
+            }
         }
 
         static void CopyFileSaveToFile()
@@ -89,7 +97,8 @@ namespace EmployeeCardNumberCheck
                     while (!sr.EndOfStream)
                     {
                        line = sr.ReadLine();
-                       values = line.Split(',');
+                        char[] delimiterChars = { ' ', ',', '、' };
+                        values = line.Split(delimiterChars);
                         EmpNO.Add(values[0]);
                         Name.Add(values[1]);
                         CardNum.Add(values[3]);
@@ -98,6 +107,7 @@ namespace EmployeeCardNumberCheck
                        Title.Add(values[5]);
                        Area.Add(values[6]);
                        caterogy.Add(values[7]);
+                        Banbie.Add(values[8]);
                      }
                     _logger.Info("ReadCSV Success!");
                 }
@@ -115,22 +125,19 @@ namespace EmployeeCardNumberCheck
             {
                 foreach (var item in CardNum.GroupBy(s => s))
                 {
-                    _logger.Info(dateTime.ToString("yyyyMMddHHmmss")+"{0}:{1}次", item.Key, item.Count());
                     if (item.Count()>1) 
                     {
                         for (int i=0; i<CardNum.Count;i++) {
-                            if (CardNum[i] == item.Key.ToString() && CardNum[i] != "NULL")
+                            if (CardNum[i] == item.Key.ToString() )
                             {
                                 DistinctCardNum.Add(CardNum[i]);
                                 DistinctEmpNo.Add(EmpNO[i]);
-                                CardNum[i] = "NULL";
-                                Console.WriteLine("已經重複卡號改為NULL");
+                                CardNum[i] = null;
                             }    
                         }
                         string SendAllDistinctEmpNo = "";
                         foreach (string DistinctEmpNo in DistinctEmpNo) 
                         {
-                            Console.WriteLine(DistinctEmpNo);
                             SendAllDistinctEmpNo += DistinctEmpNo+"、";
                         }
                         SendAllDistinctEmpNo=SendAllDistinctEmpNo.Remove(SendAllDistinctEmpNo.Length-1,1);
@@ -138,12 +145,11 @@ namespace EmployeeCardNumberCheck
                         string DistinctCardNumber = "";
                         foreach (string number in DistinctCardNum)
                         {
-                            Console.WriteLine(number);
-                            DistinctCardNumber += number ;
+                            DistinctCardNumber = number ;
                         }
                         SendAutomatedEmail(ReceiveMailUser,item.Key.ToString(),SendAllDistinctEmpNo);
                         Console.WriteLine("有重複卡號"+ DistinctCardNumber +"，員工工號為"+SendAllDistinctEmpNo+"已寄發信件");
-                        _logger.Info("有重複卡號" + item.Key.ToString() + "，員工工號為" + SendAllDistinctEmpNo + "已寄發信件");
+                        _logger.Info("有重複卡號為" + item.Key.ToString() + "，員工工號為" + SendAllDistinctEmpNo + "已寄發信件");
                         DistinctEmpNo.Clear();DistinctCardNum.Clear();
                     }
                 }
@@ -162,50 +168,52 @@ namespace EmployeeCardNumberCheck
                 StreamWriter streamWriter = new StreamWriter(FS, Encoding.UTF8);
                 for (int i = 0; i < EmpNO.Count; i++)
                 {
-                    Console.WriteLine(EmpNO[i]+ "," + Name[i] + "," + FireDate[i].ToString() + "," + CardNum[i] + "," + Dep[i] + "," + Title[i] + "," + Area[i] + "," + caterogy[i] + "\r\n");
-                    streamWriter.Write(EmpNO[i] + "," + Name[i] + "," + FireDate[i].ToString() + "," + CardNum[i] + "," + Dep[i] + "," + Title[i] + "," + Area[i] + "," + caterogy[i] + "\r\n");
+                    Console.WriteLine(EmpNO[i]+ "," + Name[i] + "," + FireDate[i].ToString() + "," + CardNum[i] + "," + Dep[i] + "," + Title[i] + "," + Area[i] + "," + caterogy[i] + "," + Banbie[i] + "\r\n");
+                    streamWriter.Write(EmpNO[i] + "," + Name[i] + "," + FireDate[i].ToString() + "," + CardNum[i] + "," + Dep[i] + "," + Title[i] + "," + Area[i] + "," + caterogy[i] + "," + Banbie[i] + "\r\n");
                 }
                 streamWriter.Flush();
                 streamWriter.Close();
 
                 Console.WriteLine("已完成另存檔案");
+                _logger.Info("已完成另存檔案");
             }
             catch (Exception ex) 
             {
                 Console.WriteLine("SaveNewCSV()"+ex);
-                _logger.Info("SaveNewCSV()" + ex);
+                _logger.Error("SaveNewCSV()" + ex);
             }
             
         }
          static void SendAutomatedEmail(string ReceiveMail,string DistinctCardNumber,string EmpNo)
         {
-            System.Net.Mail.MailMessage MyMail = new System.Net.Mail.MailMessage();
-            MyMail.From = new System.Net.Mail.MailAddress(SendEmailUser);
-            MyMail.To.Add(ReceiveMail); //設定收件者Email
-            MyMail.Bcc.Add(CCEmailUser); //加入密件副本的Mail          
-            MyMail.SubjectEncoding = System.Text.Encoding.UTF8;
-            MyMail.Subject = Subject+"卡號"+DistinctCardNumber+"工號為"+EmpNo;
-            MyMail.BodyEncoding = System.Text.Encoding.UTF8;
-            MyMail.Body = EmailBody; //設定信件內容
-            MyMail.IsBodyHtml = true; //是否使用html格式
-            
-            SmtpClient client = new SmtpClient();
-            System.Net.Mail.SmtpClient MySMTP = new System.Net.Mail.SmtpClient();
-            MySMTP.Credentials = new System.Net.NetworkCredential(SendEmailAccount, SendEmailPassword);
-            MySMTP.Host = SMPTServer; //設定smtp Server
-            MySMTP.Port =Port; //設定Port
-            MySMTP.EnableSsl = true;
-            MySMTP.Send(MyMail); //寄出信件
-            MySMTP.Dispose();
-            
             try
             {
+                System.Net.Mail.MailMessage MyMail = new System.Net.Mail.MailMessage();
+                MyMail.From = new System.Net.Mail.MailAddress(SendEmailUser);
+                MyMail.To.Add(ReceiveMail); //設定收件者Email
+                MyMail.Bcc.Add(CCEmailUser); //加入密件副本的Mail          
+                MyMail.SubjectEncoding = System.Text.Encoding.UTF8;
+                MyMail.Subject = Subject + "卡號" + DistinctCardNumber + "工號為" + EmpNo;
+                MyMail.BodyEncoding = System.Text.Encoding.UTF8;
+                MyMail.Body = EmailBody; //設定信件內容
+                MyMail.IsBodyHtml = true; //是否使用html格式
+
+                SmtpClient client = new SmtpClient();
+                System.Net.Mail.SmtpClient MySMTP = new System.Net.Mail.SmtpClient();
+                MySMTP.Credentials = new System.Net.NetworkCredential(SendEmailAccount, SendEmailPassword);
+                MySMTP.Host = SMPTServer; //設定smtp Server
+                MySMTP.Port = Port; //設定Port
+                MySMTP.EnableSsl = true;
+                MySMTP.Send(MyMail); 
+                MySMTP.Dispose();
+
+
                 MySMTP.Send(MyMail);
-                MyMail.Dispose(); //釋放資源
+                MyMail.Dispose(); 
             }
             catch (Exception ex)
             {
-                ex.ToString();
+                _logger.Error("SendAutomatedEmail" + ex);
             }
         }
     }
