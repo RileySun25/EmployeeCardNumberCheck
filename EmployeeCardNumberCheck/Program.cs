@@ -46,11 +46,11 @@ namespace EmployeeCardNumberCheck
         {
             try
             {
+                _logger.Info("排程執行Start!");
                 EmpNO.Clear(); Name.Clear(); FireDate.Clear(); CardNum.Clear(); Dep.Clear(); Title.Clear(); Area.Clear(); caterogy.Clear();Banbie.Clear();
                 CopyFileSaveToFile();
                 ReadCSV();
                 DistintOrNot();
-                SaveNewCSV();
                 _logger.Info("排程執行完畢。");
                 //Console.Read();
             }
@@ -93,40 +93,41 @@ namespace EmployeeCardNumberCheck
         {
             try
             {
-                using (var sr = new System.IO.StreamReader(Path.Combine(DataFileFromDir, FileNameEmployee),System.Text.Encoding.UTF8))
+                using (var sr = new System.IO.StreamReader(Path.Combine(DataFileFromDir, FileNameEmployee),System.Text.Encoding.Default))
                 {
                     while (!sr.EndOfStream)
                     {
-                       line = sr.ReadLine();
+                        line = sr.ReadLine();
                         char[] delimiterChars = { ' ', ',', '\t' };
                         values = line.Split(delimiterChars);
                         EmpNO.Add(values[0]);
                         Name.Add(values[1]);
                         CardNum.Add(values[3]);
                         FireDate.Add(values[2]);
-                       Dep.Add(values[4]);
-                       Title.Add(values[5]);
-                       Area.Add(values[6]);
-                       caterogy.Add(values[7]);
+                        Dep.Add(values[4]);
+                        Title.Add(values[5]);
+                        Area.Add(values[6]);
+                        caterogy.Add(values[7]);
                         Banbie.Add(values[8]);
                      }
                     _logger.Info("ReadCSV Success!");
                 }
-                File.Delete(Path.Combine(DataFileFromDir, FileNameEmployee));
             }
             catch (Exception ex)
             {
-                _logger.Error(" CReadCSV" + ex);
+                _logger.Error(" CReadCSV()" + ex);
             }
         }
         static void DistintOrNot() 
         {
             try
             {
+                bool is_DistinctorNot = false;
                 foreach (var item in CardNum.GroupBy(s => s))
                 {
                     if (item.Count() > 1 && item.Key.ToString() != "")
                     {
+                        is_DistinctorNot = true;
                         for (int i = 0; i < CardNum.Count; i++) {
                             if (CardNum[i] == item.Key.ToString())
                             {
@@ -148,9 +149,17 @@ namespace EmployeeCardNumberCheck
                             DistinctCardNumber = number;
                         }
                         SendAutomatedEmail(item.Key.ToString(), SendAllDistinctEmpNo);
-                        _logger.Info("有重複卡號為" + item.Key.ToString() + "，員工工號為" + SendAllDistinctEmpNo + "已寄發信件");
+                        _logger.Info("有重複卡號為" + item.Key.ToString() +"，重複次數"+item.Count()+ "次，員工工號為" + SendAllDistinctEmpNo + "已寄發信件");
                         DistinctEmpNo.Clear(); DistinctCardNum.Clear();
                     } 
+                }
+                if (is_DistinctorNot)
+                {
+                    SaveNewCSV();
+                    _logger.Info("is_DistinctorNot is true，刪掉錯誤檔案，有重複需另存");
+                }
+                else {
+                    _logger.Info("無重複卡號不另存，原檔不動。");
                 }
             } catch (Exception ex)
             {
@@ -162,15 +171,16 @@ namespace EmployeeCardNumberCheck
         {
             try
             {
+                File.Delete(Path.Combine(DataFileFromDir, FileNameEmployee));
                 FileStream FS = new FileStream(Path.Combine(DataFileFromDir, FileNameEmployee), FileMode.OpenOrCreate);
-                StreamWriter streamWriter = new StreamWriter(FS, Encoding.UTF8);
+                StreamWriter streamWriter = new StreamWriter(FS, Encoding.Default);
                 for (int i = 0; i < EmpNO.Count; i++)
                 {
                     streamWriter.Write(EmpNO[i] + "," + Name[i] + "," + FireDate[i].ToString() + "," + CardNum[i] + "," + Dep[i] + "," + Title[i] + "," + Area[i] + "," + caterogy[i] + "," + Banbie[i] + "\r\n");
                 }
                 streamWriter.Flush();
                 streamWriter.Close();
-                _logger.Info("已完成另存檔案");
+                _logger.Info("SaveNewCSV() Success!");
             }
             catch (Exception ex) 
             {
@@ -204,11 +214,11 @@ namespace EmployeeCardNumberCheck
                     }
                 }   
                 MyMail.SubjectEncoding = System.Text.Encoding.UTF8;
-                MyMail.Subject = Subject +"卡號為" +DistinctCardNumber +"/工號為" +EmpNo;
+                MyMail.Subject = Subject +"卡號為" +DistinctCardNumber +"/工號為"+EmpNo;
                 MyMail.BodyEncoding = System.Text.Encoding.UTF8;
                 MyMail.Priority = MailPriority.High;
                 MyMail.IsBodyHtml = true;
-                MyMail.Body = "<body style=\"background-color:	#FFFCEC;padding=20px\"><br>系統排成檢查在貴司的員工.CSV檔案中有發現重複的卡號，<p><h3 style=\"color: red\">重複卡號為: " + DistinctCardNumber+"，<br> 員工工號為:"+EmpNo+"</h3>" +
+                MyMail.Body = "<body style=\"background-color:	#FFFCEC;padding=20px\"><br>系統排程檢查在國巨的員工.CSV檔案中有發現重複的卡號，<p><h3 style=\"color: red\">重複卡號為: " +DistinctCardNumber+"，<br> 員工工號為: "+EmpNo+"</h3>" +
                     " 已先將重複的卡號寫入空值，以利讓系統順利運作。<p> 再麻煩相關單位人員盡速處理。<br><p>此為系統發送，請勿回覆。<p></body>";
                 SmtpClient client = new SmtpClient();
                 System.Net.Mail.SmtpClient MySMTP = new System.Net.Mail.SmtpClient();
